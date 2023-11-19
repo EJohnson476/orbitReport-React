@@ -10,13 +10,13 @@ const Table = ({ sat }) => {
      </tr>
      </thead>
      <tbody>
-     {sat.map(({id, data}) => 
+     {sat.map((id, data) => 
       {
       return(
         <tr key={id}>
           <td>{data.name}</td> 
           <td>{data.type}</td> 
-          <td>{id[data.launchDate]}</td> 
+          <td>{data.launchDate}</td> 
           <td>{data.operational}</td>
         </tr>
       );
